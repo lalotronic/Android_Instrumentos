@@ -14,6 +14,7 @@ fun fromInternetListFlowers(flowerList: List<ListFlowers>): List<FlowerList> {
             origen = it.origen,
             imagenLink = it.imagenLink,
             descripcion = it.descripcion,
+            anioCreacion = it.anioCreacion,
             precio = it.precio,
             manual = it.manual
         )
@@ -29,6 +30,7 @@ fun fromInternetDetailsFlowers(detailsFlower: DetailsFlower): FlowerDetails {
         origen = detailsFlower.origen,
         imagenLink = detailsFlower.imagenLink,
         descripcion = detailsFlower.descripcion,
+        anioCreacion = detailsFlower.anioCreacion,
         precio = detailsFlower.precio,
         manual = detailsFlower.manual
     )

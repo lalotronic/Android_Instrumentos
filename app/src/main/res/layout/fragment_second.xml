@@ -31,20 +31,20 @@
             android:layout_marginEnd="32dp"
             android:text="@string/NombreDetalles"
             android:textAlignment="center"
-            android:textSize="18sp"
+            android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageD" />
 
         <TextView
-            android:id="@+id/textTipoD"
+            android:id="@+id/textOrigenD"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="32dp"
             android:layout_marginEnd="24dp"
-            android:text="@string/TipoDetalles"
+            android:text="@string/OrigenDetalles"
             android:textAlignment="center"
             android:textSize="16sp"
             android:textStyle="bold|italic"
@@ -61,11 +61,48 @@
             android:layout_marginEnd="16dp"
             android:text="@string/DescripcionDetalles"
             android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textTipoD" />
-        
+            app:layout_constraintTop_toBottomOf="@id/textOrigenD" />
+
+        <TextView
+            android:id="@+id/textPrecio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/PrecioRv"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textDescripcionD" />
+
+        <TextView
+            android:id="@+id/textAnioCreacionE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/AnioCreacion"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textPrecio" />
+
+        <TextView
+            android:id="@+id/textManual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/ManualDesc"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textAnioCreacionE" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab"
@@ -77,6 +114,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageD"
             app:srcCompat="@drawable/whatsapp"
+            app:backgroundTint="@color/verde"
             android:importantForAccessibility="no" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

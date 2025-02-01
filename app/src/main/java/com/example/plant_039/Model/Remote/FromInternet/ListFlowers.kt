@@ -1,17 +1,16 @@
 package com.example.plant_039.Model.Remote.FromInternet
 
+import com.google.gson.annotations.SerializedName
+
 data class ListFlowers(
 
-    /*val id: Int,
-    val nombre: String,
-    val tipo: String,
-    val imagen: String,
-    val descripcion: String*/
     val id: Int,
     val nombre :String,
     val origen :String,
     val imagenLink: String,
     val descripcion :String,
-    val precio: Float,
+    @SerializedName("Año_creacion")
+    val anioCreacion: Int,
+    val precio: Int,
     val manual: Boolean
 )

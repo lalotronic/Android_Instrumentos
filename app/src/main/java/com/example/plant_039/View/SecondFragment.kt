@@ -73,14 +73,33 @@ class SecondFragment : Fragment() {
                 binding.textNameD.text =
                     binding.root.context.getString(R.string.NombreDetalles, flowerDetails.nombre)
 
-                binding.textTipoD.text =
-                    binding.root.context.getString(R.string.TipoDetalles, flowerDetails.origen)
+                binding.textOrigenD.text =
+                    binding.root.context.getString(R.string.OrigenDetalles, flowerDetails.origen)
 
                 binding.textDescripcionD.text =
                     binding.root.context.getString(
                         R.string.DescripcionDetalles,
                         flowerDetails.descripcion
                     )
+
+                binding.textPrecio.text =
+                    binding.root.context.getString(
+                        R.string.PrecioRv,
+                        flowerDetails.precio.toString()
+                    )
+
+                binding.textAnioCreacionE.text =
+                    binding.root.context.getString(
+                        R.string.AnioCreacion,
+                        flowerDetails.anioCreacion.toString()
+                    )
+
+                binding.textManual.text =
+                    binding.root.context.getString(
+                        R.string.ManualDesc,
+                        if (flowerDetails.manual) "SI" else "NO"
+                    )
+
 
                 binding.fab.setOnClickListener {
                     enviarWhatsApp(flowerName)
